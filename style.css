@@ -8,7 +8,7 @@ html { scroll-behavior: smooth; }
 }
 
 .baggrund {
-  position: absolute;
+  position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -16,6 +16,7 @@ html { scroll-behavior: smooth; }
 }
 
 form {
+    position: absolute;
     border: 3px solid #f1f1f1;
   }
   
