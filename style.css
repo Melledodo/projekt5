@@ -147,3 +147,14 @@ form {
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
+
+  /* Dashboard side */
+  .header{
+    width: auto;
+    height: 130px;
+    background-color: #008559;
+  }
+  .logo{
+    height: 20%;
+    width: auto;
+  }
