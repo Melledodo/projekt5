@@ -8,6 +8,7 @@ html { scroll-behavior: smooth; }
 }
 
 .baggrund {
+  position: absolute;
   display: block;
   margin-left: auto;
   margin-right: auto;
