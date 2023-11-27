@@ -150,11 +150,19 @@ form {
 
   /* Dashboard side */
   .header{
+    display: flex;
     width: auto;
     height: 130px;
     background-color: #008559;
+    justify-content: center;
+    align-items: center;
   }
   .logo{
-    height: 20%;
+    height: 45%;
     width: auto;
+  }
+  .dashboard{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #f1f1f1;
   }
