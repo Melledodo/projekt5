@@ -15,16 +15,16 @@ html { scroll-behavior: smooth; }
   width: 100%;
 }
 
-.container {
-  position: relative;
-}
+.billedeknap {
+    position: relative;
+  }
+  
+  .baggrund {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+  }
 
-.baggrund {
-  width: 100%; /* Ensure the image takes up the full width of its container */
-  height: auto; /* Maintain the image's aspect ratio */
-}
-
-button {
+.aabenknap {
   position: absolute;
   top: 50%;
   left: 50%;
