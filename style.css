@@ -12,8 +12,10 @@ html { scroll-behavior: smooth; }
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  width: 100%;
+
 }
+
 
 .billedeknap {
     position: relative;
