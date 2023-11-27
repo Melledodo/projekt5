@@ -12,16 +12,12 @@ html { scroll-behavior: smooth; }
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 
 .billedeknap {
     position: relative;
-  }
-  
-  .baggrund {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    height: auto; /* Maintain the image's aspect ratio */
   }
 
 .aabenknap {
