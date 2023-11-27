@@ -12,7 +12,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   margin: 0; /* Fjern margin for at sikre fuld bredde */
   width: 100%;
-  height: 100vh; /* Sæt højden til 100% af viewport-højden */
+  height: 100%; 
   background-size: contain;
   background-position: center; /* Centrer baggrunden */
   background-repeat: no-repeat; /* Undgå gentagelse af baggrundsbillede */
