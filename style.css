@@ -15,6 +15,23 @@ html { scroll-behavior: smooth; }
   width: 100%;
 }
 
+.container {
+  position: relative;
+}
+
+.baggrund {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the button is above the image */
+}
+
 form {
     border: 3px solid #f1f1f1;
   }
