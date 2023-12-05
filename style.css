@@ -50,13 +50,14 @@ form {
   
   /* Set a style for all buttons */
   button {
-    background-color: #cbe0d9;
-    color: white;
+    background-color: #D7EAD9;
+    color:#008559;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 25%;
+    box-shadow: 0 1px 6px white;
   }
   
   /* Add a hover effect for buttons */
