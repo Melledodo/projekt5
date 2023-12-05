@@ -7,21 +7,34 @@ html { scroll-behavior: smooth; }
     box-sizing: border-box;
 }
 
-.baggrund {
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('billeder/baggrund.png');
+    background-size: cover; /* This will make the background image cover the entire container */
+    background-position: center; /* This will center the background image */
+    background-repeat: no-repeat; /* This will prevent the background image from repeating */
+    height: 100vh; /* This sets the height of the container to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.baggrund {
   position: relative;
   display: flex;
-  margin: 0; /* Fjern margin for at sikre fuld bredde */
+  margin: 0; 
   width: 100%;
   height: 100%; 
   background-size: contain;
-  background-position: center; /* Centrer baggrunden */
-  background-repeat: no-repeat; /* Undgå gentagelse af baggrundsbillede */
-}
+  background-position: center; 
+  background-repeat: no-repeat; 
+} 
 
 
 .billedeknap {
     position: relative;
-  }
+  } */
 
 .aabenknap {
   position: absolute;
