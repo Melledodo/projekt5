@@ -41,8 +41,8 @@ html { scroll-behavior: smooth; }
   .h3 {
     color: white;
     margin: 0 0 150px 0;
-    width: 50%;
     text-align: center;
+    font-size: 2vw;
   }
 
 .aabenknap {
