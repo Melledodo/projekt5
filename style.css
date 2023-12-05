@@ -24,6 +24,7 @@ body{
     height: 50%;
     width: 60%;
     background-color: #008559;
+    border-radius: 25px;
 }
 
 .aabenknap {
