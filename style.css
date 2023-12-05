@@ -54,7 +54,7 @@ form {
     background-color: #D7EAD9;
     color:#008559;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 20% 0;
     border: none;
     cursor: pointer;
     width: 25%;
@@ -74,7 +74,16 @@ form {
     color: #008559;
   }
 
+  .logo {
+    color: White;
+    padding: 20%;
+  }
+  .h2 {
+    color: white;
+    padding: 20%;
+  }
   
+
   /* Add padding to containers */
   .container {
     padding: 16px;
