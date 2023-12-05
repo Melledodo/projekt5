@@ -21,12 +21,13 @@ html { scroll-behavior: smooth; }
 }
 
 .logindkasse{
-    display: flex;
     height: 50%;
     width: 60%;
     background-color: #008559;
     border-radius: 15px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -40,6 +41,7 @@ html { scroll-behavior: smooth; }
   .h3 {
     color: white;
     margin: 0;
+    width: 50%;
   }
 
 .aabenknap {
@@ -74,6 +76,7 @@ form {
     cursor: pointer;
     width: 25%;
     box-shadow: 0 1px 6px rgb(138, 137, 137);
+    border-radius: 10px;
   }
   
   /* Add a hover effect for buttons */
