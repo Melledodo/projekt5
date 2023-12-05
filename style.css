@@ -20,6 +20,12 @@ body{
     justify-content: center;
 }
 
+.logindkasse{
+    height: 50%;
+    width: 60%;
+    background-color: #008559;
+}
+
 .aabenknap {
   position: absolute;
   top: 50%;
