@@ -26,12 +26,15 @@ html { scroll-behavior: smooth; }
     background-color: #008559;
     border-radius: 15px;
     padding: 20px;
+    justify-content: center;
 }
-.logo {
+.logo{
     color: White;
     margin-bottom: 10px;
     margin: 0;
+    height: 35%;
   }
+
   .h3 {
     color: white;
     margin: 0;
@@ -172,7 +175,7 @@ form {
     justify-content: center;
     align-items: center;
   }
-  .logo{
+  .logoheader{
     height: 45%;
     width: auto;
   }
