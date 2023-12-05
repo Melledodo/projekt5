@@ -26,6 +26,14 @@ html { scroll-behavior: smooth; }
     background-color: #008559;
     border-radius: 15px;
 }
+.logo {
+    color: White;
+    padding: 20%;
+  }
+  .h3 {
+    color: white;
+    padding: 20%;
+  }
 
 .aabenknap {
   position: absolute;
@@ -73,16 +81,6 @@ form {
     background-color: white;
     color: #008559;
   }
-
-  .logo {
-    color: White;
-    padding: 20%;
-  }
-  .h3 {
-    color: white;
-    padding: 20%;
-  }
-  
 
   /* Add padding to containers */
   .container {
