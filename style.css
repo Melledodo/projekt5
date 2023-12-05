@@ -25,14 +25,16 @@ html { scroll-behavior: smooth; }
     width: 60%;
     background-color: #008559;
     border-radius: 15px;
+    padding: 20px;
 }
 .logo {
     color: White;
-    padding: 20%;
+    margin-bottom: 10px;
+    margin: 0;
   }
   .h3 {
     color: white;
-    padding: 20%;
+    margin: 0;
   }
 
 .aabenknap {
