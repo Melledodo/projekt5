@@ -20,22 +20,6 @@ body{
     justify-content: center;
 }
 
-/*.baggrund {
-  position: relative;
-  display: flex;
-  margin: 0; 
-  width: 100%;
-  height: 100%; 
-  background-size: contain;
-  background-position: center; 
-  background-repeat: no-repeat; 
-} 
-
-
-.billedeknap {
-    position: relative;
-  } */
-
 .aabenknap {
   position: absolute;
   top: 50%;
