@@ -58,7 +58,7 @@ form {
     border: none;
     cursor: pointer;
     width: 25%;
-    box-shadow: 0 1px 6px white;
+    box-shadow: 0 1px 6px rgb(138, 137, 137);
   }
   
   /* Add a hover effect for buttons */
