@@ -77,7 +77,7 @@ form {
     cursor: pointer;
     width: 25%;
     box-shadow: 0 1px 6px rgb(138, 137, 137);
-    border-radius: 10px;
+    border-radius: 7px;
   }
   
   /* Add a hover effect for buttons */
@@ -186,17 +186,19 @@ form {
     width: auto;
   }
   .dashboard{
-    margin-top: 18px;
-    font-size: 20px;
+    margin-top: 9px;
+    font-size: 25px;
     color: #f1f1f1;
   }
 
   .dropbtn {
-    background-color: #D7EAD9;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
+    background-color: #008559;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
     border: none;
+    width: 125%;
+    border-radius: 7px;
   }
 
   .dropdown {
@@ -207,14 +209,15 @@ form {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
+    background-color: #008559;
+    width: 125%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 7px;
   }
   
   .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
