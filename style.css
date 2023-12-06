@@ -217,7 +217,7 @@ form {
 .dropbtn::after {
   content: "∨"; /* dropdown-pil */
   position: absolute;
-  top: 50%;
+  top: 60%;
   right: 10px;
   transform: translateY(-20%);
 }
