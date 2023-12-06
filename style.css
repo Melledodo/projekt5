@@ -191,9 +191,9 @@ form {
     color: #f1f1f1;
   }
 
-  .baggrundsboks{
-    height: 50%;
-    width: 50%;
+  .baggrundsboks {
+    height: 70vh; 
+    width: 100%; 
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 20px;
@@ -201,7 +201,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
 }
 
   .dropbtn {
@@ -211,9 +210,9 @@ form {
     font-size: 18px;
     width: 200%;
     border-radius: 7px;
-    margin-top: 100%;
-    text-align: center;
-  }
+    margin-top: 10px; /* Juster margin-top efter behov */
+    text-align: left;
+}
 
   .dropdown {
     position: relative;
@@ -235,10 +234,11 @@ form {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
 
-  .dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
+
 
