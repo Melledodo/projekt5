@@ -191,14 +191,27 @@ form {
     color: #f1f1f1;
   }
 
+  .baggrundsboks{
+    height: 50%;
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
   .dropbtn {
     background-color: #008559;
     color: white;
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
-    border: none;
-    width: 125%;
+    width: 200%;
     border-radius: 7px;
+    margin-top: 100%;
   }
 
   .dropdown {
@@ -210,7 +223,7 @@ form {
     display: none;
     position: absolute;
     background-color: #008559;
-    width: 125%;
+    width: 200%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 7px;
