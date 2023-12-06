@@ -264,3 +264,7 @@ form {
 
 .dropdown:hover .dropdown-content {display: block;}
 
+.chartbox{
+  width: 600px;
+  padding: 20px;
+}
