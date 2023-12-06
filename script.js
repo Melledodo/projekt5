@@ -35,7 +35,7 @@ const myChart = new Chart(ctx, {
 });
 
 const målinger = document.getElementById('målinger');
-målinger.addEventListener('change', grafTracker)
+målinger.addEventListener('change', grafTracker);
 function grafTracker(){
 
 }
