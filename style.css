@@ -215,7 +215,7 @@ form {
     text-align: left;
 }
 .dropbtn::after {
-  content: "v"; /* Unicode trekant for at simulere en dropdown-pil */
+  content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
   position: absolute;
   top: 50%;
   right: 10px;
