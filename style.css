@@ -209,13 +209,13 @@ form {
     color: white;
     padding: 10px;
     font-size: 18px;
-    width: 200px;
+    width: 300px;
     border-radius: 7px;
     margin-top: 10%;
     text-align: left;
 }
 .dropbtn::after {
-  content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
+  content: "∨"; /* dropdown-pil */
   position: absolute;
   top: 50%;
   right: 10px;
@@ -231,7 +231,7 @@ form {
   display: none;
   position: absolute;
   background-color: #008559;
-  width: 200px;
+  width: 250px;
   border-radius: 7px;
   z-index: 2;
 }
