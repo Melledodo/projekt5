@@ -34,12 +34,8 @@ const myChart = new Chart(ctx, {
     }
 });
 
-<<<<<<< Updated upstream
-=======
 const målinger = document.getElementById('målinger');
 målinger.addEventListener('change', grafTracker)
-
 function grafTracker(){
 
 }
->>>>>>> Stashed changes
