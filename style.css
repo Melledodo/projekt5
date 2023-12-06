@@ -199,8 +199,8 @@ form {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: baseline;
+    align-items: baseline;
 }
 
   .dropbtn {
