@@ -192,7 +192,7 @@ form {
   }
 
   .baggrundsboks {
-    height: 50vh; 
+    height: 60vh; 
     width: 100%; 
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -203,21 +203,36 @@ form {
     align-items: baseline;
     margin-top: 10%;
 }
-
+.vaerdier{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.tidsramme{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.interval{
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
 .dropbtn {
     background-color: #008559;
     color: white;
     padding: 10px;
-    font-size: 18px;
+    font-size: 15px;
     width: 200px;
     border-radius: 7px;
     margin-top: 10%;
     text-align: left;
+    font-weight: bold;
 }
 .dropbtn::after {
   content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
   position: absolute;
-  top: 60%;
+  top: 70%;
   right: 10px;
   transform: translateY(-20%);
 }
