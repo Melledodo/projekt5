@@ -1,5 +1,5 @@
+//signe
 console.log("loader temperatur");
-
 document.addEventListener("DOMContentLoaded", function () {
     const temperatureDisplay = document.getElementById("temperature");
 
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start loop
     temperatureLoop();
 });
-
+//signe slut
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
