@@ -7,6 +7,13 @@ html { scroll-behavior: smooth; }
     box-sizing: border-box;
 }
 
+.kalenderkasse{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
 .baggrund{
     margin: 0;
     padding: 0;
@@ -306,6 +313,93 @@ form {
 
 #temperature.red {
   background-color: #E85F5C;
+}
+
+/* Sarah */
+.wrapper {
+  width: 450px;
+  background: #03855A;
+  border-radius: 10px;
+}
+.wrapper header{
+ display: flex;
+ align-items: center;
+ padding: 25px 30px 10px;
+ justify-content: space-between;
+ background: #D8EAD9; 
+ border-radius: 10px;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  color: 878787;
+  font-size: 1.9rem;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+ 
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .icons span:last-child{
+  margin-right: -10px;
+}
+.kalender{
+  padding: 20px;
+}
+.kalender ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.kalender .dage li{
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.kalender .uger li{
+  font-weight: 500;
+  color: #ffffff;
+}
+.kalender ul li{
+  position: relative;
+  width: calc(100% / 7);
+}
+.kalender .dage li{
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.dage li.inactive{
+  color: #b4afaf;
+}
+.dage li.active{
+  color: #fff;
+}
+.kalender .dage li::before{
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dage li:hover::before{
+  background: #b4afaf;
+}
+.dage li.active::before{
+  background: #b4afaf; 
 }
 
 footer {
