@@ -207,6 +207,7 @@ form {
     margin-top: 10%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .dropmenuer {
@@ -281,7 +282,7 @@ form {
 
 .chartbox{
   display: flex;
-  width: 600px;
+  width: 900px;
   padding: 20px;
 }
 
@@ -295,6 +296,21 @@ form {
   margin-top: 10%;
   text-align: left;
   font-weight: bold;
+}
+
+#målinger option {
+  display: none;
+  position: absolute;
+  background-color: #008559;
+  width: 200px;
+  border-radius: 7px;
+  z-index: 2;
+  color: white;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
 }
 
 .temperaturennu {
