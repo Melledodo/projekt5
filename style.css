@@ -307,3 +307,23 @@ form {
 #temperature.red {
   background-color: #E85F5C;
 }
+
+footer {
+  background-color: #D7EAD9; /* Ændr farven efter behov */
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold; 
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+      padding: 8px;
+  }
+}
