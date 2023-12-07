@@ -43,7 +43,7 @@ const myChart = new Chart(ctx, {
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Temperatur',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -76,8 +76,9 @@ const myChart = new Chart(ctx, {
 const målinger = document.getElementById('målinger');
 målinger.addEventListener('change', grafTracker);
 function grafTracker(){
-    console.log(målinger.value.split(','));
-    målinger.value.split(',');
+    const label = målinger.options[målinger.selectedIndex].text;
+    
     myChart.data.datasets[0].data = målinger.value.split(',');
+
     myChart.update();
 }
