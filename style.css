@@ -282,7 +282,7 @@ form {
   text-align: center;
   padding: 6px;
   border-radius: 8px;
-  position: fixed;
+  position: absolute;
   top: 15%; /* Juster denne værdi for at ændre afstanden fra toppen */
   right: 10px;
   width: 90px;
