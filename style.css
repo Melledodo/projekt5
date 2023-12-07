@@ -268,3 +268,42 @@ form {
   width: 600px;
   padding: 20px;
 }
+
+.temperaturennu {
+  font-size: 20px;
+  font-weight: bold;
+  color: black; /* Juster farven efter behov */
+  position: absolute;
+  top: 145px;
+  right: 150px; /* Ændret fra 250px til 20px for at placere det mere til højre */
+}
+
+#temperature-container {
+  text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+  position: fixed;
+  top: 15%; /* Juster denne værdi for at ændre afstanden fra toppen */
+  right: 10px;
+  width: 90px;
+}
+
+
+#temperature {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+#temperature.lightblue {
+  background-color: #23B5D3;
+}
+
+#temperature.yellow {
+  background-color: #FABC3C;
+}
+
+#temperature.red {
+  background-color: #E85F5C;
+}

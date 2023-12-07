@@ -1,3 +1,42 @@
+console.log("loader temperatur");
+
+document.addEventListener("DOMContentLoaded", function () {
+    const temperatureDisplay = document.getElementById("temperature");
+
+    const temperatureValues = [-1, 0, 4, 8, 10, 12, 15, 20, 22, 25,];
+    let currentTemperatureIndex = temperatureValues.indexOf(22);
+
+    function updateTemperature() {
+        const currentTemperature = temperatureValues[currentTemperatureIndex];
+        temperatureDisplay.textContent = `${currentTemperature} °`;
+        updateColor(currentTemperature);
+    }
+
+    function updateColor(temperature) {
+        const color = getColorForTemperature(temperature);
+        temperatureDisplay.style.backgroundColor = color;
+    }
+
+    function getColorForTemperature(temperature) {
+        if (temperature >= -1 && temperature <= 12) {
+            return "#23B5D3";
+        } else if (temperature >= 15 && temperature <= 20) {
+            return "#FABC3C";
+        } else {
+            return "#E85F5C";
+        }
+    }
+
+    function temperatureLoop() {
+        updateTemperature();
+        currentTemperatureIndex = (currentTemperatureIndex + 1) % temperatureValues.length;
+        setTimeout(temperatureLoop, 4000);
+    }
+
+    // Start loop
+    temperatureLoop();
+});
+
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
