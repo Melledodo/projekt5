@@ -78,4 +78,6 @@ målinger.addEventListener('change', grafTracker);
 function grafTracker(){
     console.log(målinger.value.split(','));
     målinger.value.split(',');
+    myChart.data.datasets[0].data = målinger.value.split(',');
+    myChart.update();
 }
