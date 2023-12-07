@@ -24,6 +24,16 @@
         <div id="temperature">0 °</div>
     </div>
         <div class="baggrundsboks">
+            <div class="dropmenuer">
+                <div class="selectbox">
+                    <select id="målinger">
+                        <option value="12, 19, 13, 15, 21, 10">Temperatur</option>
+                        <option value="11, 9, 5, 9, 12, 17">Luftfugtighed</option>
+                        <option value="9, 23, 12, 16, 21, 7">Kuldioxid</option>
+                        <option value="18, 12, 9, 5, 2, 14">Vandsledningsevne</option>
+                        <option value="4, 8, 3, 5, 2, 3">Vands PH</option>
+                    </select>
+                </div>
             <div class="dropdown">
                 <p class="graf">Graf</p>
                 <button class="dropbtn">Søjle</button>
@@ -50,22 +60,18 @@
                     <a href="#">1 Dag</a>
                 </div>
             </div>
+
+
+            </div>
+
+                <div class="chartbox">
+                    <canvas id="myChart"></canvas>
+                    </div>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         </div>
   
     <section>
-        <div class="chartbox">
-        <canvas id="myChart"></canvas>
-        </div>
-        <div class="selectbox">
-            <select id="målinger">
-                <option value="12, 19, 13, 15, 21, 10">Temperatur</option>
-                <option value="11, 9, 5, 9, 12, 17">Luftfugtighed</option>
-                <option value="9, 23, 12, 16, 21, 7">Kuldioxid</option>
-                <option value="18, 12, 9, 5, 2, 14">Vandsledningsevne</option>
-                <option value="4, 8, 3, 5, 2, 3">Vands PH</option>
-            </select>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+       
     </section>
     <section>
         <div class="kalenderkasse">
