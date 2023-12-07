@@ -41,7 +41,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['10:15', '10:30', '10:45', '11:00', '11:15', '11:30'],
         datasets: [{
             label: 'Temperatur',
             data: [12, 19, 3, 5, 2, 3],
