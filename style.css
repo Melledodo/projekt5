@@ -205,6 +205,8 @@ form {
     border-radius: 15px;
     padding: 20px;
     margin-top: 10%;
+    display: flex;
+    align-items: center;
 }
 
 .dropmenuer {
