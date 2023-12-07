@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     temperatureLoop();
 });
 //signe slut
-// Michelle 
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
@@ -78,60 +77,8 @@ const målinger = document.getElementById('målinger');
 målinger.addEventListener('change', grafTracker);
 function grafTracker(){
     const label = målinger.options[målinger.selectedIndex].text;
-    
+    myChart.data.datasets[0].label = label;
     myChart.data.datasets[0].data = målinger.value.split(',');
 
     myChart.update();
 }
-
-// Sarah
-const currentDate = document.querySelector(".datonu"),
-    daysTag = document.querySelector(".dage"),
-    prevNextIcon = document.querySelectorAll(".icons span");
-
-let date = new Date(),
-    currYear = date.getFullYear(),
-    currMonth = date.getMonth();
-
-const months = ["Januar", "Febuar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"];
-
-const renderCalendar = () => {
-    let firstDayOfMonth = new Date(currYear, currMonth, 1).getDay();
-    let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
-    let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
-    let liTag = "";
-
-    for (let i = firstDayOfMonth; i > 0; i--) {
-        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
-    }
-
-    for (let i = 1; i <= lastDateofMonth; i++) {
-        let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
-        liTag += `<li class="${isToday}">${i}</li>`;
-    }
-
-    for (let i = 1; i <= 6 - (lastDateofMonth + firstDayOfMonth) % 7; i++) {
-        liTag += `<li class="inactive">${i}</li>`;
-    }
-
-    currentDate.innerText = `${months[currMonth]} ${currYear}`;
-    daysTag.innerHTML = liTag;
-};
-
-renderCalendar();
-
-prevNextIcon.forEach(icon => {
-    icon.addEventListener("click", () => {
-        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
-
-        if (currMonth < 0 || currMonth > 11) {
-            date = new Date(currYear, currMonth);
-            currYear = date.getFullYear();
-            currMonth = date.getMonth();
-        } else {
-            date = new Date();
-        }
-
-        renderCalendar();
-    });
-});
