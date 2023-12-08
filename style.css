@@ -33,16 +33,16 @@ html { scroll-behavior: smooth; }
 }
 .logo{
     color: White;
-    margin: 0 0 30px 0;
+    margin: 30px 0 30px 0;
     width: 50%;
-    
+    margin-bottom: -15px;
   }
 
   .h3 {
     color: white;
     margin: 0 0 150px 0;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.9vw;
   }
 
 .aabenknap {
@@ -76,9 +76,10 @@ form {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100px;
+    width: 170px;
     box-shadow: 0 1px 6px rgb(138, 137, 137);
     border-radius: 7px;
+    font-weight: bold;
   }
   
   /* Add a hover effect for buttons */
@@ -90,8 +91,9 @@ form {
   .annuknap {
     width: 100px;
     padding: 14px 20px;
-    background-color: #D7EAD9;
-    color: #008559;
+    background-color:#D7EAD9;
+    color:#008559;
+    font-weight: bold;
   }
 
   /* Add padding to containers */
