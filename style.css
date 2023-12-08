@@ -306,6 +306,7 @@ form {
   text-align: left;
 
 }
+/* signe */
 
 .temperaturennu {
   font-size: 20px;
@@ -345,6 +346,8 @@ form {
 #temperature.red {
   background-color: #E85F5C;
 }
+/* signe slut */
+
 
 /* Sarah */
 
