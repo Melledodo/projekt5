@@ -517,8 +517,35 @@ a{
   border-radius: 15px;
 }
 
-.grålinjer{
+.vælgstatusplante{
+  margin-top: 30px;
+}
 
+.dropplante{
+  background-color: #008559;
+  height: 40px;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  width: 450px;
+  border-radius: 7px;
+  margin-top: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.dropplante::after {
+  content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
+  position: absolute;
+  top: 70%;
+  right: 10px;
+  transform: translateY(-20%);
+}
+
+.grålinjer{
+border: #03855A solid;
+height: 550px;
+width: 550px;
 }
 
 #grålinje{
