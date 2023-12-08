@@ -354,8 +354,19 @@ form {
 }
 
 .tilføjplante{
-  width: 400px;
+  width: 450px;
 }
+
+.tilføjplante input{
+  background-color: #008559;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+::placeholder{
+  color: #ffffff;
+}
+
 
 .kalenderkasse{
   display: flex;
