@@ -358,6 +358,20 @@ form {
 .undergraf{
   height: 800px;
   width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.statuskasse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 750px;
+  width: 550px;
+  background-color: #f2f2f2;
+  margin-top: 80px;
+  border-radius: 15px;
 }
 
 .tilføjplante{
