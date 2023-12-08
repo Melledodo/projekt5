@@ -516,7 +516,8 @@ a{
 }
 
 #grålinje{
- border: #000000 solid 6px;
+ background-color: #EBEBEB;
+ margin: 50px;
  width: 450px;
  height: 50px;
 }
