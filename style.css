@@ -178,6 +178,11 @@ form {
   }
 
   /* Dashboard side */
+  body{
+    background-color: #f2f2f2;
+  }
+  
+
   .header{
     display: flex;
     width: auto;
@@ -199,7 +204,7 @@ form {
   .baggrundsboks {
     height: 60vh; 
     width: 100%; 
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
     margin-top: 10%;
@@ -370,7 +375,7 @@ form {
   justify-items: center;
   height: 750px;
   width: 550px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   margin-top: 80px;
   border-radius: 15px;
 }
@@ -404,7 +409,7 @@ form {
   justify-items: center;
   height: 750px;
   width: 550px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   margin-top: 80px;
   border-radius: 15px;
 }
