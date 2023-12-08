@@ -7,13 +7,6 @@ html { scroll-behavior: smooth; }
     box-sizing: border-box;
 }
 
-.kalenderkasse{
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  min-height: 100vh;
-}
-
 .baggrund{
     margin: 0;
     padding: 0;
@@ -354,6 +347,23 @@ form {
 }
 
 /* Sarah */
+
+.undergraf{
+  height: 700px;
+  width: auto;
+}
+
+.kalenderkasse{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 600px;
+  width: 500px;
+  background-color: #f2f2f2;
+  margin-top: 100px;
+  border-radius: 15px;
+}
+
 .wrapper {
   width: 450px;
   background: #03855A;
