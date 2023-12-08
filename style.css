@@ -21,7 +21,7 @@ html { scroll-behavior: smooth; }
 }
 
 .logindkasse{
-    height: 50%;
+    height: 45%;
     width: 50%;
     background-color: #008559;
     border-radius: 15px;
@@ -132,7 +132,7 @@ form {
   .modal-content {
     background-color: #008559;
     margin: 15% auto; /* 15% from the top and horizontally centered */
-    border: 1px solid #008559;
+    border: 2px solid white;
     width: 50%; /* Adjust width based on your preference */
     height: 50%;
     border-radius: 15px;
@@ -140,11 +140,11 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items:flex-start;
+    padding-top: 20px;
 }
   
   /* The Close Button */
   .close {
-    /* Position it in the top right corner outside of the modal */
     position: absolute;
     right: 25px;
     top: 0;
