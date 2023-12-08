@@ -200,7 +200,137 @@ form {
     font-size: 25px;
     color: #f1f1f1;
   }
+
+  /* Lillian */
   
+  li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burgercontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: none;
+    gap: 10px;
+    padding-right: 25px;
+    font-family: Arial Impact, 'Arial Bold', sans-serif; 
+}
+
+.nav-profil{
+    margin-top: 25px;
+    text-align: center;
+    align-items: center; 
+    margin-bottom: 25px;
+}
+
+.nav-profil img {
+    margin-bottom: 15px; 
+}
+
+
+.profil-navn1{
+    font-size: 22px;
+    color: black;
+}
+
+.profil-navn2{
+    font-size: 13px;
+    color: black;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    transition: 0.7s ease;
+    padding-left: 50px; 
+    color: black; 
+}
+
+.nav-link img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 25px;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+
+.nav-divider {
+    width: 80%;
+    border: none;
+    border-top: 1px solid BLACK; 
+    margin: 27px 0 -7px 30px; 
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+    .nav-menu.active {
+        display: flex;
+        color: black; 
+        flex-direction: column;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        background-color: #F4F4F4;
+        width: 100%;
+        max-width: 300px;
+        border-left: 2px solid #4D4D4D;
+        border-right: 2px solid #4D4D4D;
+    }
+
+
+.nav-menu.menu-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #F4F4F4;
+    z-index: 1;
+}
+
+ .nav-item {
+        margin: 10px 0;
+    }
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Lillian slut */
 
   .baggrundsboks {
     height: 60vh; 
