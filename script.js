@@ -1,3 +1,20 @@
+//Lillian
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    navMenu.classList.toggle("menu-open"); 
+});
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    navMenu.classList.remove("menu-open");
+}));
+//Lillian slut
+
 //signe
 console.log("loader temperatur");
 document.addEventListener("DOMContentLoaded", function () {
@@ -37,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
     temperatureLoop();
 });
 //signe slut
+
+
 // Michelle
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
