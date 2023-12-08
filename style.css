@@ -302,16 +302,16 @@ a{
         max-width: 300px;
         border-left: 2px solid #4D4D4D;
         border-right: 2px solid #4D4D4D;
+        border-bottom: 2px solid #4D4D4D;
     }
 
 
 .nav-menu.menu-open {
-    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 130px;
     background-color: #F4F4F4;
     z-index: 1;
 }
