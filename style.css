@@ -79,6 +79,7 @@ form {
     width: 100px;
     box-shadow: 0 1px 6px rgb(138, 137, 137);
     border-radius: 7px;
+    font-weight: bold;
   }
   
   /* Add a hover effect for buttons */
@@ -90,8 +91,9 @@ form {
   .annuknap {
     width: 100px;
     padding: 14px 20px;
-    background-color: #D7EAD9;
-    color: #008559;
+    background-color:#D7EAD9;
+    color:#008559;
+    font-weight: bold;
   }
 
   /* Add padding to containers */
