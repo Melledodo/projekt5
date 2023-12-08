@@ -61,10 +61,11 @@ form {
   input[type=text], input[type=adgangskode] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 15px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 7px;
   }
   
   /* Set a style for all buttons */
@@ -141,7 +142,7 @@ form {
     justify-content: center;
     align-items:flex-start;
     padding-top: 20px;
-}
+  }
   
   /* The Close Button */
   .close {
