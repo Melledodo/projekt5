@@ -353,8 +353,13 @@ form {
   width: auto;
 }
 
+.tilføjplante{
+  width: 400px;
+}
+
 .kalenderkasse{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   height: 700px;
