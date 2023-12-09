@@ -499,7 +499,7 @@ a{
 /* Sarah */
 
 .undergraf{
-  height: 800px;
+  height: auto;
   width: auto;
   display: flex;
   flex-direction: row;
@@ -543,11 +543,16 @@ a{
 }
 
 .grålinjer{
-border: #03855A solid;
 height: 550px;
 width: 550px;
 position: absolute;
 margin-top: 150px;
+}
+
+.venstretekst{
+  margin-left: 50px;
+  margin-bottom: -20px;
+  color: #b4afaf;
 }
 
 #grålinje{
@@ -559,11 +564,16 @@ margin-top: 150px;
 }
 
 .grønnelinjer{
-  border: #03855A solid;
   height: 550px;
   width: 550px;
   position: absolute;
   margin-top: 150px;
+}
+
+.højretekst{
+  text-align: end;
+  margin-right: 50px;
+  margin-bottom: -20px;
 }
 
 .grølinje1{
