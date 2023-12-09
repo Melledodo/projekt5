@@ -513,7 +513,7 @@ a{
   height: 750px;
   width: 550px;
   background-color: #ffffff;
-  margin-top: 80px;
+  margin: 80px;
   border-radius: 15px;
 }
 
@@ -546,37 +546,56 @@ a{
 border: #03855A solid;
 height: 550px;
 width: 550px;
+position: absolute;
+margin-top: 150px;
 }
 
 #grålinje{
  background-color: #EBEBEB;
  margin: 50px;
  width: 450px;
- height: 50px;
+ height: 30px;
+ border-radius: 10px;
 }
 
 .grønnelinjer{
-
+  border: #03855A solid;
+  height: 550px;
+  width: 550px;
+  position: absolute;
+  margin-top: 150px;
 }
 
 .grølinje1{
-
+  background-color: #008559;
+  margin: 50px;
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .grølinje2{
-
-}
-
-.grølinje2{
-
+  background-color: #008559;
+  margin: 50px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .grølinje3{
-
+  background-color: #008559;
+  margin: 50px;
+  width: 230px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .grølinje4{
-
+  background-color: #008559;
+  margin: 50px;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .tilføjplante{
@@ -609,7 +628,7 @@ width: 550px;
   height: 750px;
   width: 550px;
   background-color: #ffffff;
-  margin-top: 80px;
+  margin: 80px;
   border-radius: 15px;
 }
 
