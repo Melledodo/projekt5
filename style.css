@@ -188,12 +188,6 @@ form {
     align-items: center;
     width: 100%;
   }
-  
-  .grafer {
-    font-weight: bold;
-    margin-top: -45%;
-    font-size: 20px;
-  }
 
   .header{
     display: flex;
@@ -223,6 +217,11 @@ form {
     color: #f1f1f1;
   }
   
+  .grafer {
+    font-weight: bold;
+    margin-top: -45%;
+    font-size: 20px;
+  }
 
   /* Lillian */
   
@@ -355,16 +354,16 @@ a{
 
 /* Lillian slut */
 
-  .baggrundsboks {
-    height: 60vh; 
-    width: 90%; 
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.baggrundsboks {
+  height: 60vh;
+  width: 90%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropmenuer {
@@ -374,40 +373,42 @@ a{
   flex-direction: column;
 }
 
-.graf{
-  margin-top: 20px;
-  font-weight: bold;
+.graf, .tidsramme, .interval, .dropbtn {
   font-size: 15px;
-}
-.tidsramme{
-  margin-top: 20px;
   font-weight: bold;
-  font-size: 15px;
-}
-.interval{
   margin-top: 20px;
-  font-weight: bold;
-  font-size: 15px;
 }
+
+/* Medieforespørgsel for mindre skærme (f.eks. tablets) */
+@media screen and (max-width: 768px) {
+  .baggrundsboks {
+    height: auto; /* Juster højden automatisk for mindre skærme */
+    margin-top: 5%; /* Juster margenen efter behov */
+  }
+
+  .graf, .tidsramme, .interval, .dropbtn {
+    font-size: 14px; /* Juster skriftstørrelsen efter behov */
+  }
+}
+
 .dropbtn {
-    background-color: #008559;
-    color: white;
-    padding: 10px;
-    font-size: 15px;
-    width: 200px;
-    border-radius: 7px;
-    margin-top: 10%;
-    text-align: left;
-    font-weight: bold;
+  background-color: #008559;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 7px;
+  margin-top: 10%;
+  text-align: left;
+  position: relative;
 }
+
 .dropbtn::after {
-  content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
+  content: "∨";
   position: absolute;
-  top: 70%;
+  top: 40%;
   right: 10px;
   transform: translateY(-20%);
 }
-
 
 .dropdown {
   position: relative;
@@ -431,9 +432,14 @@ a{
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* Michelle */
 
