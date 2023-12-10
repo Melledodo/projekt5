@@ -374,7 +374,7 @@ a{
 }
 
 .graf, .tidsramme, .interval, .dropbtn {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -384,6 +384,8 @@ a{
   .baggrundsboks {
     height: auto; /* Juster højden automatisk for mindre skærme */
     margin-top: 5%; /* Juster margenen efter behov */
+    font-size: 14px; /* eller en anden passende størrelse */
+
   }
 
   .graf, .tidsramme, .interval, .dropbtn {
