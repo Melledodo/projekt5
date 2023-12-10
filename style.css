@@ -189,6 +189,11 @@ form {
     width: 100%;
   }
   
+  .grafer {
+    font-weight: bold;
+    margin-top: -40%;
+    font-size: 20px;
+  }
 
   .header{
     display: flex;
@@ -210,12 +215,14 @@ form {
   .logoheader{
     width: auto;
     height: 100%;
+    align-items: center;
   }
   .dashboard{
     margin-top: 9px;
     font-size: 25px;
     color: #f1f1f1;
   }
+  
 
   /* Lillian */
   
@@ -370,17 +377,17 @@ a{
 .graf{
   margin-top: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 .tidsramme{
   margin-top: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 .interval{
   margin-top: 20px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 .dropbtn {
     background-color: #008559;
@@ -411,7 +418,7 @@ a{
   display: none;
   position: absolute;
   background-color: #008559;
-  width: 200px;
+  width: 80%;
   border-radius: 7px;
   z-index: 2;
 }
@@ -547,7 +554,7 @@ a{
 .dropplante::after {
   content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
   position: absolute;
-  top: 70%;
+  top: 60%;
   right: 10px;
   transform: translateY(-20%);
 }
