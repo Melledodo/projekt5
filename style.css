@@ -201,13 +201,11 @@ form {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin: 0 auto;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  flex: 1;
 }
 
 .logoheader {
