@@ -1,4 +1,6 @@
-html { scroll-behavior: smooth; }
+html {
+   scroll-behavior: smooth; 
+  }
 
 *{
     margin: 0;
@@ -181,47 +183,43 @@ form {
   }
 
   /* Dashboard side */
-  body{
+  body {
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-  }
+}
 
-  .header{
+.header {
     display: flex;
-    width: 1680px;
-    height: 130px;
+    width: 100vw;
     max-width: 1680px;
+    height: 130px;
     background-color: #008559;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     margin: 0 auto;
-  }
+}
 
-  .logo-container{
-    display: flex;
-    align-items: center;
-    height: 45%;
-  }
-  .logoheader{
-    width: auto;
-    height: 100%;
-    align-items: center;
-  }
-  .dashboard{
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logoheader {
+    max-width: 200px;
+    height: auto;
+}
+
+.dashboard {
     margin-top: 9px;
     font-size: 25px;
     color: #f1f1f1;
-  }
-  
-  .grafer {
-    font-weight: bold;
-    margin-top: -45%;
-    font-size: 20px;
-  }
+}
 
   /* Lillian */
   
@@ -318,7 +316,7 @@ a{
         flex-direction: column;
         position: absolute;
         top: 100px; 
-        left: 0;
+        right: 0;
         background-color: #F4F4F4;
         width: 100%;
         max-width: 300px;
@@ -364,6 +362,12 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.grafer {
+  font-weight: bold;
+  margin-top: -45%;
+  font-size: 20px;
 }
 
 .dropmenuer {
