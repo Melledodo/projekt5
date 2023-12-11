@@ -782,6 +782,12 @@ footer p {
 
   .dropplante{
     width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .valgtplante{
+    margin-left: 20px;
   }
 
   .grålinjer{
@@ -789,21 +795,22 @@ footer p {
   }
 
   #grålinje{
-    width: 250px;
-    margin-left: 25px;
+    width: 300px;
+    margin-left: 3px;
+    margin-right: 7px;
   }
 
   .grønnelinjer{
     width: 300px;
-    margin-left: -50px;
+    margin-left: -90px;
   }
 
   .venstretekst{
-    margin-left: 25px;
+    margin-left: 5px;
   }
 
   .højretekst{
-    margin-right: 0;
+    margin-right: -45px;
   }
 
   .tilføjplante, .vælgdato {
