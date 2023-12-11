@@ -353,7 +353,7 @@ a{
 /* signe */
 
 .temperaturennucontainer{
-  margin: 5px;
+  margin: 10px;
   width: 90%;
 
   display: flex;
@@ -610,7 +610,7 @@ margin-top: 150px;
 .grølinje1{
   background-color: #008559;
   margin: 50px;
-  width: 400px;
+  width: 70%;
   height: 30px;
   border-radius: 10px;
 }
@@ -618,7 +618,7 @@ margin-top: 150px;
 .grølinje2{
   background-color: #008559;
   margin: 50px;
-  width: 350px;
+  width: 60%;
   height: 30px;
   border-radius: 10px;
 }
@@ -626,7 +626,7 @@ margin-top: 150px;
 .grølinje3{
   background-color: #008559;
   margin: 50px;
-  width: 230px;
+  width: 40%;
   height: 30px;
   border-radius: 10px;
 }
@@ -634,9 +634,21 @@ margin-top: 150px;
 .grølinje4{
   background-color: #008559;
   margin: 50px;
-  width: 120px;
+  width: 25%;
   height: 30px;
   border-radius: 10px;
+}
+
+.kalenderkasse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 750px;
+  width: 550px;
+  background-color: #ffffff;
+  margin: 80px;
+  border-radius: 15px;
 }
 
 .tilføjplante{
@@ -658,19 +670,6 @@ margin-top: 150px;
 
 ::placeholder{
   color: #ffffff;
-}
-
-
-.kalenderkasse{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  height: 750px;
-  width: 550px;
-  background-color: #ffffff;
-  margin: 80px;
-  border-radius: 15px;
 }
 
 .wrapper {
@@ -773,6 +772,54 @@ footer p {
   font-size: 12px;
   font-weight: bold; 
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .statuskasse{
+    height: 750px;
+    width: auto;
+  }
+
+  .dropplante{
+    width: 300px;
+  }
+
+  .grålinjer{
+    width: 300px;
+  }
+
+  #grålinje{
+    width: 250px;
+    margin-left: 25px;
+  }
+
+  .grønnelinjer{
+    width: 300px;
+    margin-left: -50px;
+  }
+
+  .venstretekst{
+    margin-left: 25px;
+  }
+
+  .højretekst{
+    margin-right: 0;
+  }
+
+  .tilføjplante, .vælgdato {
+    width: 300px;
+  }
+
+  .kalenderkasse{
+    height: 750px;
+    width: auto;
+    margin-top: 10%;
+  }
+
+  .wrapper {
+    width: 300px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
