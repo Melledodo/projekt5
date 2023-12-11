@@ -58,13 +58,16 @@
             
         </nav>
     </header> 
+    <div class="temperaturennucontainer">
     <p class="temperaturennu">Temperaturen nu</p>
     <div id="temperature-container">
         <div id="temperature">0 °</div>
     </div>
+    </div>
         <div class="baggrundsboks">
-            <p class="grafer">Graf</p>
+            <div class="responsive-container">
             <div class="dropmenuer">
+                <p class="interval">Værdier</p>
                 <div class="selectbox">
                     <select id="målinger">
                         <option value="12, 19, 13, 15, 21, 10">Temperatur</option>
@@ -108,6 +111,7 @@
                     <canvas id="myChart"></canvas>
                     </div>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            </div>
         </div>
   
     <section>

@@ -351,7 +351,7 @@ a{
 /* Lillian slut */
 
 .baggrundsboks {
-  height: 60vh;
+  height: auto;
   width: 90%;
   background-color: #ffffff;
   border-radius: 15px;
@@ -362,10 +362,10 @@ a{
   justify-content: center;
 }
 
-.grafer {
-  font-weight: bold;
-  margin-top: -45%;
-  font-size: 20px;
+.responsive-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
 }
 
 .dropmenuer {
@@ -373,24 +373,13 @@ a{
   justify-content: center;
   align-items: baseline;
   flex-direction: column;
+  flex: 1;
 }
 
 .graf, .tidsramme, .interval, .dropbtn {
   font-size: 14px;
   font-weight: bold;
   margin-top: 20px;
-}
-
-/* Medieforespørgsel for mindre skærme (f.eks. tablets) */
-@media screen and (max-width: 768px) {
-  .baggrundsboks {
-    height: auto; /* Juster højden automatisk for mindre skærme */
-    margin-top: 5%; /* Juster margenen efter behov */
-  }
-
-  .graf, .tidsramme, .interval, .dropbtn {
-    font-size: 14px; /* Juster skriftstørrelsen efter behov */
-  }
 }
 
 .dropbtn {
@@ -447,9 +436,10 @@ a{
 
 .chartbox{
   display: flex;
-  width: 900px;
+  width: 70%;
   padding: 20px;
-  margin: 200px;
+  margin: 20px;
+  flex: 2;
 }
 
 #målinger{
@@ -478,7 +468,22 @@ a{
   text-align: left;
 
 }
+
+@media screen and (max-width: 900px) {
+  .responsive-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .dropmenuer, .chartbox {
+    width: 100%; /* Adjust width to fill the screen */
+    margin: 0; /* Remove margin for smaller screens */
+  }
+}
 /* signe */
+
+.temperaturennucontainer{
+  
+}
 
 .temperaturennu {
   font-size: 20px;
