@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateTemperature() {
         const currentTemperature = temperatureValues[currentTemperatureIndex];
-        temperatureDisplay.textContent = `${currentTemperature} °`;
+        temperatureDisplay.textContent = `${currentTemperature} °C`;
         updateColor(currentTemperature);
     }
 
