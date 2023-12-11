@@ -64,23 +64,9 @@ const myChart = new Chart(ctx, {
         labels: ['10:15', '10:30', '10:45', '11:00', '11:15', '11:30'],
         datasets: [{
             label: 'Temperatur',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)'
-            ],
-            borderColor: [
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)'
-            ],
+            data: [12, 19, 13, 15, 21, 10],
+            backgroundColor: 'rgba(3, 133, 91, 0.2)',
+            borderColor: 'rgba(3, 133, 91, 1)',
             borderWidth: 1
         }]
     },
@@ -94,14 +80,39 @@ const myChart = new Chart(ctx, {
 });
 
 const målinger = document.getElementById('målinger');
-målinger.addEventListener('change', grafTracker);
-function grafTracker(){
-    const label = målinger.options[målinger.selectedIndex].text;
-    myChart.data.datasets[0].label = label;
-    myChart.data.datasets[0].data = målinger.value.split(',');
+const fejlMeddelelse = document.getElementById('fejlMeddelelse');
 
-    myChart.update();
+målinger.addEventListener('change', grafTracker);
+
+function grafTracker() {
+    fejlMeddelelse.textContent = '';
+
+    // Kontroller om der er valgt en option
+    if (målinger.value) {
+        const label = målinger.options[målinger.selectedIndex].text;
+        myChart.data.datasets[0].label = label;
+
+        // Kontroller om værdien ikke er tom
+        if (målinger.value.trim() !== '') {
+            myChart.data.datasets[0].data = målinger.value.split(',');
+
+            // Konverter værdierne til tal
+            for (let i = 0; i < myChart.data.datasets[0].data.length; i++) {
+                myChart.data.datasets[0].data[i] = parseFloat(myChart.data.datasets[0].data[i]);
+            }
+
+            myChart.update();
+        } else {
+            // Vis fejlmeddelelse, hvis værdien er tom
+            fejlMeddelelse.textContent = 'Vælg venligst mindst én måling.';
+        }
+    } else {
+        // Vis fejlmeddelelse, hvis der ikke er valgt nogen option
+        fejlMeddelelse.textContent = 'Vælg venligst en gyldig måling.';
+    }
 }
+
+
 
 // Sarah
 const currentDate = document.querySelector(".datonu"),
