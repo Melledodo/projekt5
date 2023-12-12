@@ -63,8 +63,8 @@ console.log("loader temperatur");
 
 
 // Michelle
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const ctx = document.getElementById('grafChart').getContext('2d');
+const grafChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['10:15', '10:30', '10:45', '11:00', '11:15', '11:30'],
@@ -98,18 +98,18 @@ function grafTracker() {
     // Kontroller om der er valgt en option
     if (målinger.value !== 'default') {
         const label = målinger.options[målinger.selectedIndex].text;
-        myChart.data.datasets[0].label = label;
+        grafChart.data.datasets[0].label = label;
 
         // Kontroller om værdien ikke er tom
         if (målinger.value.trim() !== '') {
-            myChart.data.datasets[0].data = målinger.value.split(',');
+            grafChart.data.datasets[0].data = målinger.value.split(',');
 
             // Konverter værdierne til tal
-            for (let i = 0; i < myChart.data.datasets[0].data.length; i++) {
-                myChart.data.datasets[0].data[i] = parseFloat(myChart.data.datasets[0].data[i]);
+            for (let i = 0; i < grafChart.data.datasets[0].data.length; i++) {
+                grafChart.data.datasets[0].data[i] = parseFloat(grafChart.data.datasets[0].data[i]);
             }
 
-            myChart.update();
+            grafChart.update();
         } else {
             // Vis fejlmeddelelse, hvis værdien er tom
             fejlMeddelelse.textContent = 'Vælg venligst mindst én måling.';
