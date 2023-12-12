@@ -17,7 +17,6 @@ menuitemArray.forEach(n => n.addEventListener("click", () => {
 
 //signe
 console.log("loader temperatur");
-document.addEventListener("DOMContentLoaded", function () {
     const temperatureDisplay = document.getElementById("temperature");
 
     const temperatureValues = [-1, 0, 4, 8, 10, 12, 15, 20, 22, 25,];
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateTemperature() {
         const currentTemperature = temperatureValues[currentTemperatureIndex];
-        temperatureDisplay.textContent = `${currentTemperature} °`;
+        temperatureDisplay.textContent = `${currentTemperature} °C`;
         updateColor(currentTemperature);
     }
 
@@ -43,16 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
             return "#E85F5C";
         }
     }
-
+//+1 % øger dette udtryk indekset med 1 og sikrer, at det forbliver inden for grænserne af arrayet temperatureValues
     function temperatureLoop() {
         updateTemperature();
         currentTemperatureIndex = (currentTemperatureIndex + 1) % temperatureValues.length;
         setTimeout(temperatureLoop, 4000);
     }
 
-    // Start loop
+    // skifter temperatur med 4 sekunder 
     temperatureLoop();
-});
+
+    let temperatureArray = ["-1", "0", "4", "8", "10", "12", "15", "20", "22", "25"];
+    let arrayLength = temperatureArray.length;
+    
+    // printer temperatur med forloop
+    for (let i = 0; i < arrayLength; i++) {
+        console.log(`${temperatureArray[i]} °C`);
+    }
 //signe slut
 
 
@@ -64,23 +70,9 @@ const myChart = new Chart(ctx, {
         labels: ['10:15', '10:30', '10:45', '11:00', '11:15', '11:30'],
         datasets: [{
             label: 'Temperatur',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)',
-                'rgba(3, 133, 91, 0.2)'
-            ],
-            borderColor: [
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)',
-                'rgba(3, 133, 91, 1)'
-            ],
+            data: [12, 19, 13, 15, 21, 10],
+            backgroundColor: 'rgba(3, 133, 91, 0.2)',
+            borderColor: 'rgba(3, 133, 91, 1)',
             borderWidth: 1
         }]
     },
@@ -94,14 +86,42 @@ const myChart = new Chart(ctx, {
 });
 
 const målinger = document.getElementById('målinger');
-målinger.addEventListener('change', grafTracker);
-function grafTracker(){
-    const label = målinger.options[målinger.selectedIndex].text;
-    myChart.data.datasets[0].label = label;
-    myChart.data.datasets[0].data = målinger.value.split(',');
+const fejlMeddelelse = document.getElementById('fejlMeddelelse');
 
-    myChart.update();
+grafTracker();
+
+målinger.addEventListener('change', grafTracker);
+
+function grafTracker() {
+    fejlMeddelelse.textContent = '';
+
+    // Kontroller om der er valgt en option
+    if (målinger.value !== 'default') {
+        const label = målinger.options[målinger.selectedIndex].text;
+        myChart.data.datasets[0].label = label;
+
+        // Kontroller om værdien ikke er tom
+        if (målinger.value.trim() !== '') {
+            myChart.data.datasets[0].data = målinger.value.split(',');
+
+            // Konverter værdierne til tal
+            for (let i = 0; i < myChart.data.datasets[0].data.length; i++) {
+                myChart.data.datasets[0].data[i] = parseFloat(myChart.data.datasets[0].data[i]);
+            }
+
+            myChart.update();
+        } else {
+            // Vis fejlmeddelelse, hvis værdien er tom
+            fejlMeddelelse.textContent = 'Vælg venligst mindst én måling.';
+        }
+    } else {
+        // Vis fejlmeddelelse, hvis der ikke er valgt nogen option
+        fejlMeddelelse.textContent = 'Vælg venligst en gyldig måling.';
+    }
 }
+
+
+
 
 // Sarah
 const currentDate = document.querySelector(".datonu"),

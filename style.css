@@ -102,6 +102,7 @@ form {
   /* Add padding to containers */
   .container {
     padding: 16px;
+    color: white;
   }
   
   /* The "Forgot password" text */
@@ -358,7 +359,7 @@ a{
 /* signe */
 
 .temperaturennucontainer{
-  margin: 5px;
+  margin: 10px;
   width: 90%;
 
   display: flex;
@@ -382,7 +383,7 @@ a{
 
 
 #temperature {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
   padding: 6px;
   border-radius: 7px;
@@ -483,13 +484,22 @@ a{
 
 
 /* Michelle */
-
-.chartbox{
+.chartbox {
   display: flex;
+  flex-direction: column;
   width: 70%;
   padding: 20px;
   margin: 20px;
   flex: 2;
+  position: relative;
+  align-items: center;
+}
+
+#fejlMeddelelse {
+  color: red;
+  position: absolute;
+  top: -30px; /* Juster denne værdi efter behov for at placere fejlmeddelelsen over charten */
+  margin-top: 30px;
 }
 
 #målinger{
@@ -591,7 +601,7 @@ margin-top: 150px;
   color: #b4afaf;
 }
 
-#grålinje{
+.grålinje{
  background-color: #EBEBEB;
  margin: 50px;
  width: 450px;
@@ -615,7 +625,7 @@ margin-top: 150px;
 .grølinje1{
   background-color: #008559;
   margin: 50px;
-  width: 400px;
+  width: 70%;
   height: 30px;
   border-radius: 10px;
 }
@@ -623,7 +633,7 @@ margin-top: 150px;
 .grølinje2{
   background-color: #008559;
   margin: 50px;
-  width: 350px;
+  width: 60%;
   height: 30px;
   border-radius: 10px;
 }
@@ -631,7 +641,7 @@ margin-top: 150px;
 .grølinje3{
   background-color: #008559;
   margin: 50px;
-  width: 230px;
+  width: 40%;
   height: 30px;
   border-radius: 10px;
 }
@@ -639,9 +649,21 @@ margin-top: 150px;
 .grølinje4{
   background-color: #008559;
   margin: 50px;
-  width: 120px;
+  width: 25%;
   height: 30px;
   border-radius: 10px;
+}
+
+.kalenderkasse{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 750px;
+  width: 550px;
+  background-color: #ffffff;
+  margin: 80px;
+  border-radius: 15px;
 }
 
 .tilføjplante{
@@ -663,19 +685,6 @@ margin-top: 150px;
 
 ::placeholder{
   color: #ffffff;
-}
-
-
-.kalenderkasse{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  height: 750px;
-  width: 550px;
-  background-color: #ffffff;
-  margin: 80px;
-  border-radius: 15px;
 }
 
 .wrapper {
@@ -778,6 +787,61 @@ footer p {
   font-size: 12px;
   font-weight: bold; 
   color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .statuskasse{
+    height: 750px;
+    width: auto;
+  }
+
+  .dropplante{
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .valgtplante{
+    margin-left: 20px;
+  }
+
+  .grålinjer{
+    width: 300px;
+  }
+
+  .grålinje{
+    width: 300px;
+    margin-left: 3px;
+    margin-right: 7px;
+  }
+
+  .grønnelinjer{
+    width: 300px;
+    margin-left: -90px;
+  }
+
+  .venstretekst{
+    margin-left: 5px;
+  }
+
+  .højretekst{
+    margin-right: -45px;
+  }
+
+  .tilføjplante, .vælgdato {
+    width: 300px;
+  }
+
+  .kalenderkasse{
+    height: 750px;
+    width: auto;
+    margin-top: 10%;
+  }
+
+  .wrapper {
+    width: 300px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
