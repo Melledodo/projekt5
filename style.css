@@ -479,16 +479,22 @@ a{
 
 
 /* Michelle */
-#fejlMeddelelse {
-  color: red; /* Vælg en farve, der skiller sig ud fra baggrunden */
-}
-
-.chartbox{
+.chartbox {
   display: flex;
+  flex-direction: column;
   width: 70%;
   padding: 20px;
   margin: 20px;
   flex: 2;
+  position: relative;
+  align-items: center;
+}
+
+#fejlMeddelelse {
+  color: red;
+  position: absolute;
+  top: -30px; /* Juster denne værdi efter behov for at placere fejlmeddelelsen over charten */
+  margin-top: 30px;
 }
 
 #målinger{

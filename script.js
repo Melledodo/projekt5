@@ -82,13 +82,15 @@ const myChart = new Chart(ctx, {
 const målinger = document.getElementById('målinger');
 const fejlMeddelelse = document.getElementById('fejlMeddelelse');
 
+grafTracker();
+
 målinger.addEventListener('change', grafTracker);
 
 function grafTracker() {
     fejlMeddelelse.textContent = '';
 
     // Kontroller om der er valgt en option
-    if (målinger.value) {
+    if (målinger.value !== 'default') {
         const label = målinger.options[målinger.selectedIndex].text;
         myChart.data.datasets[0].label = label;
 
@@ -111,6 +113,7 @@ function grafTracker() {
         fejlMeddelelse.textContent = 'Vælg venligst en gyldig måling.';
     }
 }
+
 
 
 

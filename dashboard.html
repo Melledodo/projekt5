@@ -70,7 +70,7 @@
                 <p class="interval">Værdier</p>
                 <div class="selectbox">
                     <select id="målinger">
-                        <option value="" disabled selected>Vælg måling</option>
+                        <option value="default" disabled selected>Vælg måling</option>
                         <option value="12, 19, 13, 15, 21, 10">Temperatur</option>
                         <option value="11, 9, 5, 9, 12, 17">Luftfugtighed</option>
                         <option value="9, 23, 12, 16, 21, 7">Kuldioxid</option>
@@ -107,8 +107,8 @@
 
 
             </div>
-            <div id="fejlMeddelelse"></div>
                 <div class="chartbox">
+                    <div id="fejlMeddelelse"></div>
                     <canvas id="myChart"></canvas>
                     </div>
                 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
