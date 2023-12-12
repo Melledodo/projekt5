@@ -235,6 +235,11 @@ a{
     align-items: center;
 }
 
+.profilbillede {
+  width: 170px;
+}
+
+
 .navbar{
     min-height: 100px;
     display: flex;
