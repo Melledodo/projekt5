@@ -52,12 +52,12 @@ console.log("loader temperatur");
     // skifter temperatur med 4 sekunder 
     temperatureLoop();
 
-    let myStringArray = ["-1", "0", "4", "8", "10", "12", "15", "20", "22", "25"];
-    let arrayLength = myStringArray.length;
+    let temperatureArray = ["-1", "0", "4", "8", "10", "12", "15", "20", "22", "25"];
+    let arrayLength = temperatureArray.length;
     
     // printer temperatur med forloop
     for (let i = 0; i < arrayLength; i++) {
-        console.log(`${myStringArray[i]} °C`);
+        console.log(`${temperatureArray[i]} °C`);
     }
 //signe slut
 
