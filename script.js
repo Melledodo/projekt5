@@ -17,7 +17,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 //signe
 console.log("loader temperatur");
-document.addEventListener("DOMContentLoaded", function () {
     const temperatureDisplay = document.getElementById("temperature");
 
     const temperatureValues = [-1, 0, 4, 8, 10, 12, 15, 20, 22, 25,];
@@ -43,16 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
             return "#E85F5C";
         }
     }
-
+//+1 % øger dette udtryk indekset med 1 og sikrer, at det forbliver inden for grænserne af arrayet temperatureValues
     function temperatureLoop() {
         updateTemperature();
         currentTemperatureIndex = (currentTemperatureIndex + 1) % temperatureValues.length;
         setTimeout(temperatureLoop, 4000);
     }
 
-    // Start loop
+    // skifter temperatur med 4 sekunder 
     temperatureLoop();
-});
+
+    let temperatureArray = ["-1", "0", "4", "8", "10", "12", "15", "20", "22", "25"];
+    let arrayLength = temperatureArray.length;
+    
+    // printer temperatur med forloop
+    for (let i = 0; i < arrayLength; i++) {
+        console.log(`${temperatureArray[i]} °C`);
+    }
 //signe slut
 
 
