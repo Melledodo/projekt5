@@ -132,7 +132,6 @@ form {
     height: 100%; 
     overflow: auto; 
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    padding-top:center;
   }
   
   /* Modal Content/Box */
@@ -215,8 +214,9 @@ form {
 }
 
 .dashboard {
-    margin-top: 9px;
-    font-size: 25px;
+    margin-top: 8px;
+    font-size: 30px;
+    font-weight: 500;
     color: #f1f1f1;
 }
 
@@ -235,6 +235,11 @@ a{
     display: flex;
     align-items: center;
 }
+
+.profilbillede {
+  width: 170px;
+}
+
 
 .navbar{
     min-height: 100px;
@@ -703,7 +708,7 @@ header .current-date{
 header .icons span{
   height: 38px;
   width: 38px;
-  color: 878787;
+  color: #000000;
   font-size: 1.9rem;
   margin: 0 1px;
   cursor: pointer;
