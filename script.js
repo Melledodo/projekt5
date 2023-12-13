@@ -63,57 +63,59 @@ console.log("loader temperatur");
 
 
 // Michelle
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['10:15', '10:30', '10:45', '11:00', '11:15', '11:30'],
-        datasets: [{
-            label: 'Temperatur',
-            data: [12, 19, 13, 15, 21, 10],
-            backgroundColor: 'rgba(3, 133, 91, 0.2)',
-            borderColor: 'rgba(3, 133, 91, 1)',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+document.addEventListener('DOMContentLoaded', function () {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['10:15', '10:30', '10:45', '11:00', '11:15', '11:30'],
+            datasets: [{
+                label: 'Temperatur',
+                data: [12, 19, 13, 15, 21, 10],
+                backgroundColor: 'rgba(3, 133, 91, 0.2)',
+                borderColor: 'rgba(3, 133, 91, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
+        }
+    });
+
+    const målinger = document.getElementById('målinger');
+    const fejlMeddelelse = document.getElementById('fejlMeddelelse');
+
+    grafTracker();
+
+    målinger.addEventListener('change', grafTracker);
+
+    function grafTracker() {
+        fejlMeddelelse.textContent = '';
+
+        if (målinger.value !== 'default') {
+            const label = målinger.options[målinger.selectedIndex].text;
+            myChart.data.datasets[0].label = label;
+
+            if (målinger.value.trim() !== '') {
+                myChart.data.datasets[0].data = målinger.value.split(',');
+
+                for (let i = 0; i < myChart.data.datasets[0].data.length; i++) {
+                    myChart.data.datasets[0].data[i] = parseFloat(myChart.data.datasets[0].data[i]);
+                }
+
+                myChart.update();
+            } else {
+                fejlMeddelelse.textContent = 'Vælg venligst mindst én måling.';
+            }
+        } else {
+            fejlMeddelelse.textContent = 'Vælg venligst en gyldig måling.';
         }
     }
 });
-
-const målinger = document.getElementById('målinger');
-const fejlMeddelelse = document.getElementById('fejlMeddelelse');
-
-grafTracker();
-
-målinger.addEventListener('change', grafTracker);
-
-function grafTracker() {
-    fejlMeddelelse.textContent = '';
-
-    if (målinger.value !== 'default') {
-        const label = målinger.options[målinger.selectedIndex].text;
-        myChart.data.datasets[0].label = label;
-
-        if (målinger.value.trim() !== '') {
-            myChart.data.datasets[0].data = målinger.value.split(',');
-
-            for (let i = 0; i < myChart.data.datasets[0].data.length; i++) {
-                myChart.data.datasets[0].data[i] = parseFloat(myChart.data.datasets[0].data[i]);
-            }
-
-            myChart.update();
-        } else {
-            fejlMeddelelse.textContent = 'Vælg venligst mindst én måling.';
-        }
-    } else {
-        fejlMeddelelse.textContent = 'Vælg venligst en gyldig måling.';
-    }
-}
 
 
 
