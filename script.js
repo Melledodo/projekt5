@@ -93,27 +93,22 @@ målinger.addEventListener('change', grafTracker);
 function grafTracker() {
     fejlMeddelelse.textContent = '';
 
-    // Kontroller om der er valgt en option
     if (målinger.value) {
         const label = målinger.options[målinger.selectedIndex].text;
         grafChart.data.datasets[0].label = label;
 
-        // Kontroller om værdien ikke er tom
         if (målinger.value.trim() !== '') {
             grafChart.data.datasets[0].data = målinger.value.split(',');
 
-            // Konverter værdierne til tal
             for (let i = 0; i < grafChart.data.datasets[0].data.length; i++) {
                 grafChart.data.datasets[0].data[i] = parseFloat(grafChart.data.datasets[0].data[i]);
             }
 
             grafChart.update();
         } else {
-            // Vis fejlmeddelelse, hvis værdien er tom
             fejlMeddelelse.textContent = 'Vælg venligst mindst én måling.';
         }
     } else {
-        // Vis fejlmeddelelse, hvis der ikke er valgt nogen option
         fejlMeddelelse.textContent = 'Vælg venligst en gyldig måling.';
     }
 }

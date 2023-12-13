@@ -13,10 +13,10 @@ html {
     margin: 0;
     padding: 0;
     background-image: url('billeder/baggrund.png');
-    background-size: cover; /* This will make the background image cover the entire container */
-    background-position: center; /* This will center the background image */
-    background-repeat: no-repeat; /* This will prevent the background image from repeating */
-    height: 100vh; /* This sets the height of the container to 100% of the viewport height */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,14 +52,13 @@ html {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1; /* Ensure the button is above the image */
+  z-index: 1; 
 }
 
 form {
     border: 3px solid #f1f1f1;
   }
   
-  /* Full-width inputs */
   input[type=text], input[type=adgangskode] {
     width: 100%;
     padding: 12px 20px;
@@ -70,7 +69,6 @@ form {
     border-radius: 7px;
   }
   
-  /* Set a style for all buttons */
   button {
     background-color: #D7EAD9;
     color:#008559;
@@ -85,12 +83,10 @@ form {
     margin-top: 20px;
   }
   
-  /* Add a hover effect for buttons */
   button:hover {
     opacity: 0.8;
   }
   
-  /* Extra style for the cancel button (red) */
   .annuknap {
     width: 100px;
     padding: 14px 20px;
@@ -99,13 +95,11 @@ form {
     font-weight: bold;
   }
 
-  /* Add padding to containers */
   .container {
     padding: 16px;
     color: white;
   }
-  
-  /* The "Forgot password" text */
+
   span.adk {
     padding-top: 16px;
     padding-right: 20px; 
@@ -121,9 +115,8 @@ form {
     }
   }
 
-  /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -131,15 +124,14 @@ form {
     width: 100%; 
     height: 100%; 
     overflow: auto; 
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.6); 
   }
   
-  /* Modal Content/Box */
   .modal-content {
     background-color: #008559;
-    margin: 15% auto; /* 15% from the top and horizontally centered */
+    margin: 15% auto; 
     border: 2px solid white;
-    width: 50%; /* Adjust width based on your preference */
+    width: 50%; 
     height: 50%;
     border-radius: 15px;
     display: flex;
@@ -149,7 +141,6 @@ form {
     padding-top: 20px;
   }
   
-  /* The Close Button */
   .close {
     position: absolute;
     right: 25px;
@@ -159,14 +150,12 @@ form {
     font-weight: bold;
   }
   
-  /* Close button on hover */
   .close:hover,
   .close:focus {
     color: #D7EAD9;
     cursor: pointer;
   }
   
-  /* Add Zoom Animation */
   .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
@@ -182,7 +171,6 @@ form {
     to {transform: scale(1)}
   }
 
-  /* Dashboard side */
   body {
     background-color: #f2f2f2;
     margin: 0;
@@ -371,7 +359,7 @@ a{
 .temperaturennu {
   font-size: 20px;
   font-weight: bold;
-  color: black; /* Juster farven efter behov */
+  color: black; 
 }
 
 #temperature-container {
@@ -498,7 +486,7 @@ a{
 #fejlMeddelelse {
   color: red;
   position: absolute;
-  top: -30px; /* Juster denne værdi efter behov for at placere fejlmeddelelsen over charten */
+  top: -30px; 
   margin-top: 30px;
 }
 
@@ -531,12 +519,12 @@ a{
 
 @media screen and (max-width: 900px) {
   .responsive-container {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
+    flex-direction: column; 
   }
 
   .dropmenuer, .chartbox {
-    width: 100%; /* Adjust width to fill the screen */
-    margin: 0; /* Remove margin for smaller screens */
+    width: 100%; 
+    margin: 0; 
   }
 }
 
@@ -581,7 +569,7 @@ a{
 }
 
 .dropplante::after {
-  content: "∨"; /* Unicode trekant for at simulere en dropdown-pil */
+  content: "∨"; 
   position: absolute;
   top: 60%;
   right: 10px;
@@ -775,7 +763,7 @@ header .icons span:last-child{
 }
 
 footer {
-  background-color: #D7EAD9; /* Ændr farven efter behov */
+  background-color: #D7EAD9; 
   padding: 10px;
   text-align: center;
   border-radius: 12px;
