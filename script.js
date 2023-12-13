@@ -42,7 +42,7 @@ console.log("loader temperatur");
             return "#E85F5C";
         }
     }
-//+1 % øger dette udtryk indekset med 1 og sikrer, at det forbliver inden for grænserne af arrayet temperatureValues
+
     function temperatureLoop() {
         updateTemperature();
         currentTemperatureIndex = (currentTemperatureIndex + 1) % temperatureValues.length;
